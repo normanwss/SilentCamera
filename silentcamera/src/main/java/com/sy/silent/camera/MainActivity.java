@@ -78,11 +78,11 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if(!helper.hasPermission(getApplicationContext(), Manifest.permission.WRITE_EXTERNAL_STORAGE)){
-                    alarmTextView.setText("* Please grant write/read external storage permission.");
+                    alarmTextView.setText("  * Please grant write/read external storage permission.");
                     alarmTextView.setVisibility(View.VISIBLE);
                     return;
                 }else if(!helper.hasPermission(getApplicationContext(),Manifest.permission.CAMERA)){
-                    alarmTextView.setText("* Please grant camera permission.");
+                    alarmTextView.setText("  * Please grant camera permission.");
                     alarmTextView.setVisibility(View.VISIBLE);
                     return;
                 }else {
